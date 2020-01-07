@@ -1,0 +1,2 @@
+1. Complete Ubuntu 18.04 install
+2. Setup complete on Gitlab
