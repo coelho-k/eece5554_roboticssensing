@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# CITE SOURCES 
+# Methods taken and modified from the nmea_navsat ROS driver 
 
 import rospy, math, serial, time, string, re, logging
 from std_msgs.msg import String
@@ -72,7 +72,7 @@ parse_maps = {
         ("num_satellites", safe_int, 7),
         ("utc_time", convert_time, 1),
     ]
-    }
+}
 
 def parse_nmea_sentence(nmea_sentence):
     """Parse a NMEA sentence string into a dictionary.
@@ -94,7 +94,7 @@ def parse_nmea_sentence(nmea_sentence):
     # Ignore the $ and talker ID portions (e.g. GP)
     sentence_type = fields[0][3:]
 
-    if sentence_type not in parse_maps:
+    """if sentence_type not in parse_maps:
         logger.debug("Sentence type %s not in parse map, ignoring."
                      % repr(sentence_type))
         return False
@@ -103,10 +103,19 @@ def parse_nmea_sentence(nmea_sentence):
 
     parsed_sentence = {}
     for entry in parse_map:
-        parsed_sentence[entry[0]] = entry[1](fields[entry[2]])
+        parsed_sentence[entry[0]] = entry[1](fields[entry[2]])"""
+
+    if sentence_type in parse_maps:
+        parse_map = parse_maps[sentence_type]
+        parsed_sentence = {}
+        for entry in parse_map:
+            parsed_sentence[entry[0]] = entry[1](fields[entry[2]])
+        return {sentence_type: parsed_sentence}
+    else:
+        pass
 
 
-    return {sentence_type: parsed_sentence}
+    #return {sentence_type: parsed_sentence}
 
 def get_frame_id():
         """Get the TF frame_id.
@@ -142,6 +151,7 @@ def add_sentence(nmea_string, frame_id, timestamp=None):
         #    return False
 
         parsed_sentence = parse_nmea_sentence(nmea_string)
+        #print(parsed_sentence)
         if not parsed_sentence:
             rospy.logdebug(
                 "Failed to parse NMEA sentence. Sentence was: %s" %
@@ -176,8 +186,8 @@ def add_sentence(nmea_string, frame_id, timestamp=None):
             current_fix.altitude = altitude
 
             current_fix.utm_easting, current_fix.utm_northing, current_fix.zone, current_fix.letter = utm_converter.from_latlon(current_fix.latitude, current_fix.longitude)
-
             print(current_fix)
+            return current_fix
         #else:
         #    return False
 
@@ -190,6 +200,8 @@ def main():
         ~baud (int): Baud rate to configure the serial device.
     """
     rospy.init_node('nmea_serial_driver')
+    pub = rospy.Publisher('gps_data', gps_data)
+    rate = rospy.Rate(20)
 
     serial_port = rospy.get_param('~port', '/dev/ttyACM0')
     serial_baud = rospy.get_param('~baud', 4800)
@@ -199,11 +211,16 @@ def main():
         GPS = serial.Serial(port=serial_port, baudrate=serial_baud, timeout=2)
 
         try:
-            #driver = RosNMEADriver()
             while not rospy.is_shutdown():
                 data = GPS.readline().strip()
                 try:
-                    add_sentence(data, frame_id)
+                    cf = add_sentence(data, frame_id)
+                    if cf == False:
+                        pass
+                    else:
+                        print(cf)
+                        pub.publish(cf)
+                        rate.sleep()
                 except ValueError as e:
                     rospy.logwarn(
                         "Value error, likely due to missing fields in the NMEA message. "
