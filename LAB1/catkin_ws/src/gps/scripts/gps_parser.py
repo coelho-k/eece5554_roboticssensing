@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-# Certain methods and formatting taken and modified from the nmea_navsat ROS driver 
-# https://github.com/ros-drivers/nmea_navsat_driver
+# Methods taken and modified from the nmea_navsat ROS driver 
 
 import rospy, math, serial, time, string, re, logging
 from std_msgs.msg import String

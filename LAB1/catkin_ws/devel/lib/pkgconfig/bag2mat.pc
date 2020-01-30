@@ -1,8 +1,0 @@
-prefix=/home/kyle/catkin_ws/devel
-
-Name: bag2mat
-Description: Description of bag2mat
-Version: 1.0.0
-Cflags: 
-Libs: -L/home/kyle/catkin_ws/devel/lib 
-Requires: 

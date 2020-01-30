@@ -291,12 +291,6 @@ actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 
 //Value Computed by CMake
-bag2mat_BINARY_DIR:STATIC=/home/kyle/catkin_ws/build/bag2mat
-
-//Value Computed by CMake
-bag2mat_SOURCE_DIR:STATIC=/home/kyle/catkin_ws/src/bag2mat
-
-//Value Computed by CMake
 beginner_tutorials_BINARY_DIR:STATIC=/home/kyle/catkin_ws/build/beginner_tutorials
 
 //Value Computed by CMake
@@ -304,9 +298,6 @@ beginner_tutorials_SOURCE_DIR:STATIC=/home/kyle/catkin_ws/src/beginner_tutorials
 
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
-
-//The directory containing a CMake configuration file for class_loader.
-class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
@@ -405,15 +396,6 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
-//The directory containing a CMake configuration file for pluginlib.
-pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
-
-//The directory containing a CMake configuration file for rosbag.
-rosbag_DIR:PATH=/opt/ros/melodic/share/rosbag/cmake
-
-//The directory containing a CMake configuration file for rosbag_storage.
-rosbag_storage_DIR:PATH=/opt/ros/melodic/share/rosbag_storage/cmake
-
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
 
@@ -431,15 +413,6 @@ rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
-
-//The directory containing a CMake configuration file for roslib.
-roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
-
-//The directory containing a CMake configuration file for roslz4.
-roslz4_DIR:PATH=/opt/ros/melodic/share/roslz4/cmake
-
-//The directory containing a CMake configuration file for rospack.
-rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
@@ -470,9 +443,6 @@ tf2_ros_DIR:PATH=/opt/ros/melodic/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
-
-//The directory containing a CMake configuration file for topic_tools.
-topic_tools_DIR:PATH=/opt/ros/melodic/share/topic_tools/cmake
 
 //The directory containing a CMake configuration file for turtlesim.
 turtlesim_DIR:PATH=/opt/ros/melodic/share/turtlesim/cmake
@@ -590,7 +560,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -631,10 +601,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Test COMPILER_SUPPORTS_CXX0X
-COMPILER_SUPPORTS_CXX0X:INTERNAL=1
-//Test COMPILER_SUPPORTS_CXX11
-COMPILER_SUPPORTS_CXX11:INTERNAL=1
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.17()]
 //Details about finding Threads

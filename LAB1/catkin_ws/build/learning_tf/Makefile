@@ -168,6 +168,51 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+learning_tf/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : learning_tf/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: learning_tf/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_py.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+# Convenience name for target.
+learning_tf/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : learning_tf/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_lisp: learning_tf/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+# Convenience name for target.
+learning_tf/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : learning_tf/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: learning_tf/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+# Convenience name for target.
 learning_tf/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
 	cd /home/kyle/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : learning_tf/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
@@ -363,6 +408,21 @@ actionlib_msgs_generate_messages_cpp/fast:
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+learning_tf/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : learning_tf/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_cpp: learning_tf/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+# Convenience name for target.
 learning_tf/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
 	cd /home/kyle/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : learning_tf/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
@@ -511,6 +571,21 @@ tf2_msgs_generate_messages_nodejs: learning_tf/CMakeFiles/tf2_msgs_generate_mess
 tf2_msgs_generate_messages_nodejs/fast:
 	cd /home/kyle/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make learning_tf/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+learning_tf/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_tf/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : learning_tf/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: learning_tf/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/kyle/catkin_ws/build && $(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 learning_tf/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
@@ -701,7 +776,10 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... install/local"
+	@echo "... std_srvs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_eus"
@@ -715,6 +793,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_py"
@@ -726,6 +805,7 @@ help:
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... test"
 	@echo "... actionlib_generate_messages_nodejs"
